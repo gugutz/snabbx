@@ -1,0 +1,90 @@
+{
+  "name": "snabbx",
+  "description": "Composable snabbdom virtual-nodes using tagged template strings",
+  "version": "1.0.0",
+  "author": "Thiago Santos",
+  "main": "dist/snabbx.js",
+  "module": "dist/snabbx.es.js",
+  "jsnext:main": "dist/snabbx.es.js",
+  "scripts": {
+    "docs": "documentation readme lib/index.js --section=API -q --shallow",
+    "lint": "npm run prettify && xo --fix",
+    "prettify": "prettier --single-quote --no-semi --no-bracket-spacing --trailing-comma none --write \"test/**/*.js\" --write \"lib/**/*.js\" --write rollup.config.js",
+    "test": "npm run lint && ava -v",
+    "test:watch": "ava -w",
+    "build": "rollup -c",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+    "precommit": "npm test && npm run build && npm run docs"
+  },
+  "files": [
+    "dist"
+  ],
+  "ava": {
+    "files": [
+      "test/*.test.js"
+    ],
+    "require": [
+      "reify/node"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/thiamsantos/snabbx/issues"
+  },
+  "dependencies": {
+    "hyperx": "^2.3.0",
+    "snabbdom": "^0.6.8"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-register": "^6.24.1",
+    "browser-sync": "^2.18.11",
+    "coveralls": "^2.13.1",
+    "documentation": "^4.0.0-rc.1",
+    "npm-run-all": "^4.0.2",
+    "nyc": "^10.3.2",
+    "prettier": "^1.3.1",
+    "reify": "^0.11.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "xo": "^0.18.2"
+  },
+  "homepage": "https://github.com/thiamsantos/snabbx#readme",
+  "keywords": [
+    "composable",
+    "diff",
+    "diffhtml",
+    "dom",
+    "dom",
+    "element",
+    "hyperx",
+    "minimal",
+    "patch",
+    "performance",
+    "snabbdom",
+    "string",
+    "template",
+    "template string",
+    "tiny",
+    "vdom",
+    "virtual",
+    "virtual",
+    "virtual",
+    "virtual-dom"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiamsantos/snabbx.git"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": true,
+    "rules": {
+      "no-use-before-define": "warn"
+    }
+  }
+}
