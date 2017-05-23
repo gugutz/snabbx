@@ -10,7 +10,7 @@ import {
 
 test('getText function with one item', t => {
   const actual = getText(['\n Hey man  '])
-  const expected = 'Hey man'
+  const expected = ' Hey man  '
 
   t.is(
     actual,

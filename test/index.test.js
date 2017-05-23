@@ -34,7 +34,7 @@ test('html function', t => {
       }
     },
     sel: 'a',
-    text: 'Lorem',
+    text: '      Lorem    ',
     elm: undefined,
     key: undefined
   }
@@ -56,9 +56,9 @@ test('html function with children', t => {
         children: [
           {
             children: undefined,
-            data: undefined,
+            data: {},
             sel: undefined,
-            text: 'Hey',
+            text: 'Hey ',
             key: undefined,
             elm: undefined
           },
@@ -79,7 +79,7 @@ test('html function with children', t => {
             key: undefined
           }
         ],
-        data: undefined,
+        data: {},
         sel: 'p',
         text: undefined,
         key: undefined,
@@ -87,7 +87,7 @@ test('html function with children', t => {
       },
       {
         children: undefined,
-        data: undefined,
+        data: {},
         sel: 'div',
         text: undefined,
         elm: undefined,
@@ -95,14 +95,14 @@ test('html function with children', t => {
       },
       {
         children: undefined,
-        data: undefined,
+        data: {},
         sel: undefined,
-        text: 'dom',
+        text: '      dom    ',
         key: undefined,
         elm: undefined
       }
     ],
-    data: undefined,
+    data: {},
     sel: 'div',
     text: undefined,
     elm: undefined,
