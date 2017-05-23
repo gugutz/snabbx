@@ -14,7 +14,8 @@
     "test:watch": "ava -w",
     "build": "rollup -c",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
-    "precommit": "npm test && npm run build && npm run docs"
+    "precommit": "npm test && npm run build && npm run docs",
+    "preversion": "npm run precommit"
   },
   "files": [
     "dist"
