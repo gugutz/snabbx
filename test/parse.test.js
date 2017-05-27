@@ -44,7 +44,7 @@ test('getClasses function with a single class', t => {
 
 test('getClasses function with more than one class', t => {
   const actual = getClasses({
-    className: ['btn', 'btn-default']
+    className: 'btn btn-default'
   })
 
   const expected = {
