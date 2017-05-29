@@ -1,7 +1,7 @@
 {
   "name": "snabbx",
   "description": "Composable snabbdom virtual-nodes using tagged template strings",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Thiago Santos",
   "main": "dist/snabbx.js",
   "module": "dist/snabbx.es.js",
