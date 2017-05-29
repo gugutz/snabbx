@@ -111,3 +111,56 @@ test('html function with children', t => {
 
   t.deepEqual(actual, expected)
 })
+
+test('html with list', t => {
+  const items = [0, 1, 2, 3]
+  const actual = html`<ul>
+    ${items.map(item => {
+      return html`<li>${item}</li>`
+    })}
+  </ul>`
+
+  const expected = {
+    children: [
+      {
+        children: undefined,
+        data: {},
+        sel: 'li',
+        text: '0',
+        elm: undefined,
+        key: undefined
+      },
+      {
+        children: undefined,
+        data: {},
+        sel: 'li',
+        text: '1',
+        elm: undefined,
+        key: undefined
+      },
+      {
+        children: undefined,
+        data: {},
+        sel: 'li',
+        text: '2',
+        elm: undefined,
+        key: undefined
+      },
+      {
+        children: undefined,
+        data: {},
+        sel: 'li',
+        text: '3',
+        elm: undefined,
+        key: undefined
+      }
+    ],
+    data: {},
+    sel: 'ul',
+    text: undefined,
+    elm: undefined,
+    key: undefined
+  }
+
+  t.deepEqual(actual, expected)
+})
