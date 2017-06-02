@@ -139,6 +139,17 @@ test('getAttributes function', t => {
   t.deepEqual(
     actual,
     expected,
-    'it should the attributes ignoring events listeneres, styles, class names and data-attributes'
+    'it should return the attributes ignoring events listeneres, styles, class names and data-attributes'
   )
+})
+
+test('getAttributes function with boolean attribute', t => {
+  const actual = getAttributes({
+    required: false,
+    autofocus: 'false',
+    selected: ''
+  })
+  const expected = {}
+
+  t.deepEqual(actual, expected)
 })
