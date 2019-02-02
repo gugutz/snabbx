@@ -1,8 +1,8 @@
 # Snabbx
 
 [![npm (scoped)](https://img.shields.io/npm/v/snabbx.svg)](https://www.npmjs.com/package/snabbx)
-[![Travis](https://img.shields.io/travis/thiamsantos/snabbx.svg)](https://travis-ci.org/thiamsantos/snabbx)
-[![Coveralls](https://img.shields.io/coveralls/thiamsantos/snabbx.svg)](https://coveralls.io/github/thiamsantos/snabbx?branch=master)
+[![Travis](https://img.shields.io/travis/gugutz/snabbx.svg)](https://travis-ci.org/gugutz/snabbx)
+[![Coveralls](https://img.shields.io/coveralls/gugutz/snabbx.svg)](https://coveralls.io/github/gugutz/snabbx?branch=master)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 > Composable snabbdom virtual-nodes using tagged template strings
@@ -95,4 +95,4 @@ See the [contributing file](CONTRIBUTING.md).
 
 ## License
 
-[MIT License](LICENSE) © [Thiago Santos](https://thiamsantos.github.io/)
+[MIT License](LICENSE) © [Gustavo P Borges](https://gugutz.github.io/)

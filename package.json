@@ -2,7 +2,7 @@
   "name": "snabbx",
   "description": "Composable snabbdom virtual-nodes using tagged template strings",
   "version": "1.1.2",
-  "author": "Thiago Santos",
+  "author": "Gustavo P Borges",
   "main": "dist/snabbx.js",
   "module": "dist/snabbx.es.js",
   "jsnext:main": "dist/snabbx.es.js",
@@ -29,7 +29,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/thiamsantos/snabbx/issues"
+    "url": "https://github.com/gugutz/snabbx/issues"
   },
   "dependencies": {
     "hyperx": "^2.3.0",
@@ -53,7 +53,7 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "xo": "^0.18.2"
   },
-  "homepage": "https://github.com/thiamsantos/snabbx#readme",
+  "homepage": "https://github.com/gugutz/snabbx#readme",
   "keywords": [
     "composable",
     "diff",
@@ -79,7 +79,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thiamsantos/snabbx.git"
+    "url": "git+https://github.com/gugutz/snabbx.git"
   },
   "xo": {
     "semicolon": false,
