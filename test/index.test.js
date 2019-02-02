@@ -10,7 +10,8 @@ test('html function', t => {
       data-type="button"
       href="/"
       style="display: block;"
-      onclick=${click}>
+      onclick="${click}"
+    >
       Lorem
     </a>
   `
@@ -48,7 +49,8 @@ test('html function with children', t => {
       <p>Hey <span class="span">There</span></p>
       <div></div>
       dom
-    <div>
+      <div></div>
+    </div>
   `
   const expected = {
     children: [
@@ -114,11 +116,17 @@ test('html function with children', t => {
 
 test('html with list', t => {
   const items = [0, 1, 2, 3]
-  const actual = html`<ul>
-    ${items.map(item => {
-      return html`<li>${item}</li>`
-    })}
-  </ul>`
+  const actual = html`
+    <ul>
+      ${
+        items.map(item => {
+          return html`
+            <li>${item}</li>
+          `
+        })
+      }
+    </ul>
+  `
 
   const expected = {
     children: [
