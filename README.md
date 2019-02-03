@@ -44,7 +44,7 @@ Create a virtual node.
 
 **Parameters**
 
--   `template` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** HTML template.
+-   `template` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** HTML template.
 
 **Examples**
 
@@ -58,7 +58,7 @@ html`
 `
 ```
 
-Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** a virtual node.
+Returns **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** a virtual node.
 
 ### render
 
@@ -66,8 +66,8 @@ Make the diff of two virtual node and render them.
 
 **Parameters**
 
--   `oldNode` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** virtual node to be modified.
--   `newNode` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** virtual node to be rendered.
+-   `oldNode` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** virtual node to be modified.
+-   `newNode` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** virtual node to be rendered.
 
 **Examples**
 

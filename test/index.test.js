@@ -99,9 +99,17 @@ test('html function with children', t => {
         children: undefined,
         data: {},
         sel: undefined,
-        text: '      dom    ',
+        text: '      dom      ',
         key: undefined,
         elm: undefined
+      },
+      {
+        children: undefined,
+        data: {},
+        sel: 'div',
+        text: undefined,
+        elm: undefined,
+        key: undefined
       }
     ],
     data: {},
@@ -118,13 +126,11 @@ test('html with list', t => {
   const items = [0, 1, 2, 3]
   const actual = html`
     <ul>
-      ${
-        items.map(item => {
-          return html`
-            <li>${item}</li>
-          `
-        })
-      }
+      ${items.map(item => {
+        return html`
+          <li>${item}</li>
+        `
+      })}
     </ul>
   `
 
